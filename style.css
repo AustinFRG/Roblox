@@ -30,23 +30,40 @@ body,header,nav,h1 {
 
 body {
   background:#1C2026;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+header {
+  background: #2a2f38;
+  padding: 20px;
+  text-align: center;
 }
 
 button {
   background:green;
-  padding-bottom:50px;
-  padding-top:50px;
-  margin:0 auto;
-  display:inline;
-  width:250px;
-  height:250px;
-  font-size:50px;
+  padding:20px;
+  margin:10px auto;
+  display:block;
+  width:200px;
+  font-size:1.2em;
   cursor:pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button:hover {
+  background: darkgreen;
 }
 
 a {
-  color: white;
-  text-decoration:none;
+  color: #0099ff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
 }
 
 .searchWrapper {
@@ -63,6 +80,15 @@ a {
   width:100%;
   box-sizing:border-box;
   background-color: whitesmoke;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .site {
@@ -85,12 +111,32 @@ a {
 
 .nav-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
-  align-items: center;
   background: #2a2f38;
   padding:15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background: #2a2f38;
+  padding: 10px 0;
+}
+
+.nav .tab {
+  background: #14171C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .tab:hover {
+  background: #0099ff;
 }
 
 img {
@@ -98,21 +144,21 @@ img {
 }
 
 .header {
-  background-color: #1C2026;
-  margin: 0 auto;
   display: block;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
 .wrapper {
-  width:100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
   background: #2a2f38;
-  padding:15px;
+  border-radius: 10px;
   height:100%;
   box-sizing:border-box;
   display: flex;
   flex-flow: wrap;
-  max-width: 1000px;
-  margin:0 auto;
 }
 
 .getmovincrew {
@@ -265,6 +311,9 @@ nav.nav {
   margin-left: 2%;
   margin-bottom: 3%;
   margin-top: 3%;
+  padding: 20px;
+  background: #38404b;
+  border-radius: 10px;
 }
 
 .aboutus2 {
@@ -277,6 +326,9 @@ nav.nav {
   margin-left: 10%;
   margin-bottom: 3%;
   margin-top: 3%;
+  padding: 20px;
+  background: #38404b;
+  border-radius: 10px;
 }
 
 .aboutus3 {
@@ -305,6 +357,8 @@ nav.nav {
 .about-page {
   color: #dbdbdb;
   margin-right: 30px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 .yt-username{
   display: block;
@@ -316,9 +370,10 @@ nav.nav {
   background-color: rgba(37, 37, 37, 0.719);
   padding-bottom: 15px;
   border-radius: 25px;
-  display: -webkit-inline-box;
+  display: flex;
+  justify-content: space-around;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .snowflake {
